@@ -1,0 +1,36 @@
+.controller.custom{
+    width: 260px;
+    height: 260px;
+    background: url(https://raw.githubusercontent.com/korisya/gamepadviewer/master/img/pad.png);
+}
+
+.custom .button{
+    position: absolute;
+    width: 260px;
+    height: 260px;
+}
+
+.custom .a.pressed{
+    background: url(https://raw.githubusercontent.com/korisya/gamepadviewer/master/img/highlight.png);
+    transform: rotate(90deg);
+}
+.custom .b.pressed{
+    background: url(https://raw.githubusercontent.com/korisya/gamepadviewer/master/img/highlight.png);
+	transform: rotate(180deg);
+}
+.custom .x.pressed{
+    background: url(https://raw.githubusercontent.com/korisya/gamepadviewer/master/img/highlight.png);
+    transform: rotate(270deg);
+}
+.custom .y.pressed{
+    background: url(https://raw.githubusercontent.com/korisya/gamepadviewer/master/img/highlight.png);
+}
+
+}
+/* NOTE: You NEED to set this to exactly half the height of what is listed 
+for '.controller.custom' so when your skin is activated via player selection
+parameters (e.g. http://mrmcpowned.com/gamepad?p=1) it will be correctly
+centered on screen. */
+.custom.half{
+    margin-top: -130px;
+}
